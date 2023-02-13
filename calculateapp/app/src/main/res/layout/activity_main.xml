@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/value1"
+        android:layout_width="219dp"
+        android:layout_height="78dp"
+        android:ems="10"
+        android:hint="Value 1"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <EditText
+        android:id="@+id/value2"
+        android:layout_width="237dp"
+        android:layout_height="90dp"
+        android:ems="10"
+        android:hint="Value 2"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/value1"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/value1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <TextView
+        android:id="@+id/txtViewResult"
+        android:layout_width="195dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:text="Result View"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/value2"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/value2"
+        app:layout_constraintTop_toBottomOf="@+id/value2" />
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="202dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:onClick="Sum"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewResult"
+        app:layout_constraintStart_toStartOf="@+id/txtViewResult"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewResult" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
