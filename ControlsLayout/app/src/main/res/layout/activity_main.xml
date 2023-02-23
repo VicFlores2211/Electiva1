@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvTitulo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:autoText="true"
+                android:text="Datos personales"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etdName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese su nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etdLastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese su apellido"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/twGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genero" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbMasculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino" />
+
+                <RadioButton
+                    android:id="@+id/rbFemenino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino" />
+
+                <RadioButton
+                    android:id="@+id/rbOtros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otros" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/twPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paises" />
+
+            <Spinner
+                android:id="@+id/spnPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listheader="Seleccione un pais"
+                tools:listitem="@android:layout/activity_list_item" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Almacenar"
+                android:text="Guardar" />
+
+            <EditText
+                android:id="@+id/tmlResult"
+                android:layout_width="match_parent"
+                android:layout_height="282dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:scrollIndicators="right"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollHorizontally="true"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
