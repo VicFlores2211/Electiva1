@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="320dp"
+        android:layout_height="547dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="245dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="40dp"
+            android:text="Calculando un tipo de triangulo"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtTriangulo"
+            android:layout_width="246dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:hint="Ingrese el primer lado"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/edtTriangulo2"
+            android:layout_width="240dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Ingrese el tercer lado"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edtTriangulo3"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="@+id/edtTriangulo3"
+            app:layout_constraintTop_toBottomOf="@+id/edtTriangulo3" />
+
+        <EditText
+            android:id="@+id/edtTriangulo3"
+            android:layout_width="249dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Ingrese el segundo lado"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edtTriangulo"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/edtTriangulo"
+            app:layout_constraintTop_toBottomOf="@+id/edtTriangulo" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:onClick="Calculate"
+            android:text="Calcular tipo"
+            app:layout_constraintEnd_toEndOf="@+id/edtTriangulo2"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintStart_toStartOf="@+id/edtTriangulo2"
+            app:layout_constraintTop_toBottomOf="@+id/edtTriangulo2" />
+
+        <ImageView
+            android:id="@+id/iwTriangulo"
+            android:layout_width="97dp"
+            android:layout_height="79dp"
+            android:layout_marginBottom="44dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/button"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
