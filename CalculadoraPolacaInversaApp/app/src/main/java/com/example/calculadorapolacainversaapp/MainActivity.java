@@ -25,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void Calculate(View view) {
 
-        double data1, data2, result;
+        double data1, data2, result, datatest;
+
+        datatest = 1.1;
 
         data1 = Double.parseDouble(value1.getText().toString());
         data2 = Double.parseDouble(value2.getText().toString());
